@@ -129,18 +129,6 @@ h1 {
   right: 160px;
   margin-top: 180px;
 }
-/*select {
-  border-radius: 5px;
-  width: 120px;
-  height: 30px;
-  border: none;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: 5px;
-  padding-left: 5px;
-}*/
-
 .menu {
   font-family: "Lato", sans-serif;
   display: flex;
@@ -287,7 +275,6 @@ h1 {
 /* Acerca */
 /* Slideshow container */
 .acerca-container {
-  /*max-width: 1000px;*/
   position: relative;
   margin: auto;
   justify-content: right;
@@ -304,7 +291,11 @@ h1 {
 }
 .acerca-image {
   width: 100%;
+  height: auto;
   background-color: black;
+  background-image: url("assets2/acerca.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .acerca-text-container {
   position: absolute;
@@ -441,16 +432,17 @@ h1 {
 }
 
 .services-header {
-  display: inline;
+  display: inline-block;
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   color: #ffffff;
   margin-left: 7.5vw;
   margin-right: 2vw;
   margin-top: 2vw;
-  padding-top: 2vw;
 }
-
+.services-header-text {
+  display: inline;
+}
 .accordion-button-icon-text-container {
   display: inline-flex;
   align-items: center;
@@ -560,15 +552,16 @@ h1 {
 .title-form {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
   color: #024a93;
+  margin-top: 10px;
 }
 .background {
   background-image: url("assets/pexels-pixabay-373076.jpg");
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
-  overflow: hidden;
   background-size: cover;
 }
 form {
@@ -579,7 +572,8 @@ form {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  top: -20px;
+  transform: translate(0, -8%);
+  z-index: 55;
 }
 .container {
   display: flex;
@@ -589,6 +583,7 @@ form {
 }
 .both {
   width: 50%;
+  margin-top: 20px;
 }
 .width {
   width: 100%;
@@ -602,6 +597,11 @@ textarea {
   font-family: "Lato", sans-serif;
   width: 90%;
   margin-top: 10px;
+  padding: 10px 0px;
+}
+
+#message {
+  height: 80px;
 }
 
 .submit {
@@ -611,6 +611,7 @@ textarea {
   background-color: #024a93;
   border: none;
   color: #ffffff;
+  font-weight: bolder;
 }
 #color-icon {
   background-color: #006ec9;
@@ -626,14 +627,32 @@ textarea {
 .tel {
   text-align: center;
 }
+.copyright {
+  text-align: center;
+}
 footer {
-  background-color: #006ec9;
+  background-color: #024a93;
   color: #ffffff;
-  position: relative;
+  padding-top: 20px;
+}
+.white-logo {
+  background-image: url("assets/logo_bco.png");
+  height: 65px;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  padding-top: 20px;
 }
 .ocho {
-  float: right;
-  right: 0px;
+  background-image: url("assets/ocho.png");
+  right: 10px;
   width: 100%;
-  background-color: #006ec9;
+  background-color: #024a93;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  height: 70px;
+}
+.img-footer {
+  display: flex;
+  justify-content: flex-end;
 }
