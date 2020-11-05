@@ -200,6 +200,9 @@ h1 {
   overflow: hidden;
 }
 
+.img {
+  width: 100%;
+}
 #overlay {
   width: 55%;
   height: 100%;
@@ -301,6 +304,7 @@ h1 {
 }
 .acerca-image {
   width: 100%;
+  background-color: black;
 }
 .acerca-text-container {
   position: absolute;
@@ -326,7 +330,9 @@ h1 {
 .acerca-bullet-container {
   display: table-row;
 }
-
+.acerca-bullet-symbol {
+  color: #006ec9;
+}
 .acerca-bullet-text-container {
   display: table-cell;
   height: 100%;
@@ -355,12 +361,12 @@ h1 {
 }
 .line3 {
   position: absolute;
-  transform: translate(0, -75%);
+  transform: translate(0, -60%);
+  border-bottom: 1px solid #006ec9;
 }
 
 /******************************* ACCORDION ********************************************/
 .accordion-container {
-  /*background-color: cornflowerblue;*/
   background-image: url("assets/ocho.png");
   background-color: black;
   opacity: 0.75;
@@ -434,11 +440,15 @@ h1 {
   display: block;
 }
 
-.services_header {
+.services-header {
   display: inline;
   font-family: "Lato", sans-serif;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #ffffff;
+  margin-left: 7.5vw;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  padding-top: 2vw;
 }
 
 .accordion-button-icon-text-container {
@@ -502,8 +512,7 @@ h1 {
   height: 350px;
   position: relative;
 }
-.panel-container {
-}
+
 .panel-text {
   color: white;
   max-width: 250px;
@@ -533,6 +542,10 @@ h1 {
   display: inline-block;
   right: 0;
   position: absolute;
+}
+
+#height {
+  height: 70px;
 }
 
 /*----------FORM--------------------*/
@@ -566,6 +579,7 @@ form {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  top: -20px;
 }
 .container {
   display: flex;
