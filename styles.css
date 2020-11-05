@@ -340,6 +340,7 @@ h1 {
   height: 47px;
   border-bottom: 1px solid black;
   display: inline;
+  margin-left: 2vw;
 }
 
 .line {
