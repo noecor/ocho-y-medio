@@ -29,14 +29,30 @@ function showSlides(n) {
 }
 
 function accordion_click(id) {
-  var acc = document.getElementById(id);
-  console.log(id);
-  console.log(acc.style.display);
-  if(acc.style.display==""){
-    console.log("display="+acc.style.display);
-    acc.style.display = "Block";
+  var el_panel = document.getElementById("panel-" + id);
+  var el_arrow = document.getElementById("arrow-" + id);
+  var el_barra = document.getElementById("barra-" + id);
+  var el_panel_barra = document.getElementById("panel-barra-" + id);
+
+  console.log(el_panel);
+  console.log(el_arrow);
+  console.log(el_barra);
+  
+
+  if(el_panel.style.display==""){
+    el_panel.classList.toggle("panel-active");
+    el_arrow.innerHTML = "&#65087;";
+    el_arrow.classList.toggle("accordion-button-arrow-active");
+    el_barra.classList.toggle("accordion-barra-active");
+    el_panel_barra.classList.toggle("accordion-panel-barra-active");
+
   } else {
-    acc.style.display = "";
+    el_panel.classList.toggle("panel");
+    el_arrow.innerHTML = "&#65088;";
+    el_arrow.classList.toggle("accordion-button-arrow");
+    el_barra.classList.toggle("accordion-barra-active");
+    el_panel_barra.classList.toggle("accordion-panel-barra");
   }
   
 }
+//this.classList.toggle("active");

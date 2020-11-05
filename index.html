@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Ocho y medio</title>
@@ -16,13 +19,13 @@
         <!-- HEADER -->
         <header>
             <nav>
-                <a href="index.html" class="logo-mobile"><img src="assets2/header-logo.png" class="logo" /></a>
+                <a href="index.html" class="logo-mobile"><img src="assets/logo.png" class="logo" /></a>
                 <ul class="menu">
                     <li class="line"></li>
-                    <li class="menuItem"><a href="#" id="menuItem"><span>01. </span>Inicio </a></li>
-                    <li class="menuItem"><a href="#" id="menuItem"><span>02. </span>Nosotros </a></li>
-                    <li class="menuItem"><a href="#" id="menuItem"><span>03. </span>Servicios </a></li>
-                    <li class="menuItem"><a href="#" id="menuItem"><span>04. </span>Contacto </a></li>
+                    <li class="menuItem"><a href="#" id="menuItem"><span class="color-blue">01. </span>Inicio </a></li>
+                    <li class="menuItem"><a href="#" id="menuItem"><span class="color-blue">02. </span>Nosotros </a></li>
+                    <li class="menuItem"><a href="#" id="menuItem"><span class="color-blue">03. </span>Servicios </a></li>
+                    <li class="menuItem"><a href="#" id="menuItem"><span class="color-blue">04. </span>Contacto </a></li>
                 </ul>
             </nav>
         </header>
@@ -34,19 +37,30 @@
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <img src="/assets2/Carousel1.PNG" style="width:100%">
-            </div>
+            <h1>Confianza. <br>
+                Reputacion.<br>
+                Liderazgo.<br>
+                Credibilidad.</h1>
+                <div id="overlay"></div>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="/assets/video_header02.jpg" class="" style="width:100%; height: auto;">
+                </div>
 
-            <div class="mySlides fade">
-                <img src="/assets2/Carousel1.PNG" style="width:100%">
-            </div>
+                <div class="mySlides fade">
+                    <img src="/assets/gestion_crisis_01.jpg" class="" style="width:100%">
+                </div>
 
-            <div class="mySlides fade">
-                <img src="/assets2/Carousel1.PNG" style="width:100%">
-            </div>
+                <div class="mySlides fade">
+                    <img src="/assets/gestion_crisis_02.jpg" style="width:100%">
+                </div>
 
+                <div class="mySlides fade">
+                    <img src="/assets/gestion_crisis_03.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/assets/gestion_crisis_04.jpg" style="width:100%">
+                </div>
             <!-- Next and previous buttons -->
 
             <!-- The dots/circles -->
@@ -55,14 +69,15 @@
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
                 <a class="next" onclick="plusSlides(1)">&#65088;</a>
             </div>
         </div>
         <!---SECOND SECTION -->
         <div class="acerca-container">
-            <img class="acerca-image" src="/assets2/acerca.PNG">
+            <img class="acerca-image" src="/assets/fdo_02-b.jpg">
             <div class="acerca-text-container">
-                <h1 class="acerca-header">Acerca de nosotros</h1>
+                <h2 class="acerca-header">Acerca de <span>nosotros</span></h2>
                 <div class="line2"></div>
                 <h2 class="acerca-subheader">
                     Somos una consultora de comunicación y asuntos
@@ -110,40 +125,32 @@
         <div class="accordion-container">
             <div class="services_header">Nuestros <span>Servicios</span></div>
             <div class="line3"></div>
-            <div class="accordion-buttons">
-                <button class="accordion" value="Button1" onclick="accordion_click(this.value)">Section 1</button>
-                <div class="panel" id="Button1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <button class="accordion">Section 2</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat.</p>
+            <div class="accordion-buttons-container">
+                <button class="accordion" value="Button1" onclick="accordion_click(this.value)">
+                    <div class="accordion-button-icon-text-container">
+                        <img class="accordion-button-icon" src="/assets/binoculares.svg"></img>
+                        <span class="accordion-button-text">Vision Integral</span>
+                    </div>
+                    <span class="accordion-button-arrow" id="arrow-Button1">&#65088;</span>
+                    <div class="accordion-barra" id="barra-Button1"></div>
+                </button>
+                <div class="panel" id="panel-Button1">
+                    <p class="panel-text">Equipo con vasta trayectoria en
+                        comunicación corporativa, campañas
+                        políticas, vocería y gestión de redes sociales.
+                        Construcción de la estrategia orientada al
+                        cumplimiento de objetivos.</p>
+                    <img class="panel-image" src="/assets/Visión integral_04.jpg"></img>
+                    <div class="accordion-barra" id="panel-barra-Button1"></div>
                 </div>
             </div>
         </div>
-
-        <div>
+ <!--------FORM------------>
+        <div class="background">
             <form>
-                <p>contáctese con nosotros</p>
-                <p>Si tiene algún mensaje o consulta <span>no dude en escribirnos mediante el siguiente formulario</span></p>
+                <p class="mini-title">contáctese con nosotros</p>
+                <p class="title-form">Si tiene algún mensaje o consulta <span>no dude en escribirnos mediante el siguiente
+                        formulario</span></p>
                 <form>
                     <input type="text" id="name" name="name" placeholder="Nombre y apellido"><br><br>
                     <input type="text" id="mail" name="mail" placeholder="E-mail"><br><br>
@@ -151,13 +158,15 @@
                     <textarea id="message" name="message" placeholder="Mensaje o consulta"></textarea><br><br>
                     <input type="text" id="org" name="org" placeholder="Organización o empresa"><br><br>
                     <input type="text" id="org" name="org" placeholder="Teléfono/móvil"><br><br>
-                    <input type="submit" value="ENVIAR MENSAJE">
-            </form>
+                    <div class="align"><input type="submit" value="ENVIAR MENSAJE" class="submit">
+                    <i class="fas fa-arrow-right" id="color-icon"></i></div>
+                    <p class="tel">Tel.: 011-4446-2679 | E-mail: info@ochoymedio.com.ar</p>
+            </form>  
         </div>
         <!--FOOTER-->
         <footer>
             <img src="" alt="">
-            <p>2020 © Ocho y medio, todos los derechos reservados. | Diseño y desarrollo Creatica agency.</p>
+            <p class="tel">2020 © Ocho y medio, todos los derechos reservados. | Diseño y desarrollo Creatica agency.</p>
         </footer>
         <script src="main.js" type="text/javascript"></script>
 </body>
