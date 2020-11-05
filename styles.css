@@ -361,9 +361,14 @@ h1 {
 /******************************* ACCORDION ********************************************/
 .accordion-container {
   /*background-color: cornflowerblue;*/
-  background-image: url("assets/L_accordion.png");
+  background-image: url("assets/ocho.png");
+  background-color: black;
+  opacity: 0.75;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.accordion-container::before {
+  background-color: black;
 }
 
 .accordion-buttons-container {
@@ -376,8 +381,12 @@ h1 {
   /*padding: 18px;*/
   width: 100%;
   border-color: #024a93;
-  border-width: 5px;
-  border-style: none;
+  /*border-width: 0.5px;
+  border-style: solid;*/
+  border-top: 0.5px solid #01172cde;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
   text-align: left;
   outline: none;
   font-size: 15px;
@@ -389,9 +398,28 @@ h1 {
   padding: 0px;
 }
 
-.active,
-.accordion:hover {
-  /*background-color: #ccc;*/
+.accordion-active {
+  border-left: 0px;
+  border-right: 0px;
+  border-top-style: solid;
+  border-bottom-style: none;
+
+  /*background-color: #eee;*/
+  /*  color: #444;*/
+  cursor: pointer;
+  /*padding: 18px;*/
+  width: 100%;
+  border-top: 0.5px solid #01172cde;
+  border-width: 1px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0px;
 }
 
 .accordion:after {
@@ -408,39 +436,55 @@ h1 {
 
 .services_header {
   display: inline;
-  margin-top: 10px;
-  font-size: 1.5rem;
-  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
 }
 
 .accordion-button-icon-text-container {
   display: inline-flex;
   align-items: center;
+  margin-left: 30px;
+}
+
+.accordion-button-icon {
+  height: 40px;
+  width: auto;
 }
 
 .accordion-button-text {
-  font-size: xx-large;
+  margin-left: 20px;
+}
+
+.accordion-button-text {
+  font-size: 1.8rem;
   color: white;
-  font-style: normal;
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  padding: 15px;
 }
 .accordion-button-arrow {
   color: #024a93;
   margin-left: 100px;
   position: absolute;
   right: 30px;
+  z-index: 50;
 }
 
 .accordion-button-arrow-active {
   color: white;
-  z-index: 11;
+  margin-left: 100px;
+  position: absolute;
+  right: 30px;
+  z-index: 50;
 }
 
 .accordion-barra {
   display: none;
 }
 .accordion-barra-active {
-  background-color: rgb(83, 83, 92);
-  width: 200px;
+  background-color: #024a93;
+  width: 40%;
   align-self: stretch;
   z-index: 10;
   margin-left: auto;
@@ -453,24 +497,29 @@ h1 {
 
 .panel-active {
   background-color: black;
-  display: flex;
-  overflow: hidden;
-  align-content: center;
-  height: 250px;
+  display: block;
+  overflow: visible;
+  height: 350px;
+  position: relative;
 }
 .panel-container {
 }
 .panel-text {
   color: white;
-  max-width: 200px;
+  max-width: 250px;
   display: inline-block;
-  margin-left: auto;
+  position: relative;
+  top: 50%;
+  transform: translate(100px, -66%);
 }
 .panel-image {
-  max-height: 300px;
-  z-index: 30;
-  display: inline-block;
-  margin-left: auto;
+  height: 300px;
+  z-index: 40;
+  display: inline;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  overflow: visible;
 }
 
 .accordion-panel-barra {
@@ -478,10 +527,12 @@ h1 {
 }
 .accordion-panel-barra-active {
   background-color: #024a93;
-  width: 200px;
-  height: 100%;
+  width: 40%;
+  height: 350px;
   z-index: 10;
-  display: flex;
+  display: inline-block;
+  right: 0;
+  position: absolute;
 }
 
 /*----------FORM--------------------*/
@@ -516,6 +567,28 @@ form {
   padding: 20px;
   text-align: center;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin: 0 auto;
+}
+.both {
+  width: 50%;
+}
+.width {
+  width: 100%;
+}
+input,
+textarea {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid grey;
+  font-family: "Lato", sans-serif;
+  width: 90%;
+  margin-top: 10px;
+}
 
 .submit {
   margin: 0 auto;
@@ -538,4 +611,15 @@ form {
 }
 .tel {
   text-align: center;
+}
+footer {
+  background-color: #006ec9;
+  color: #ffffff;
+  position: relative;
+}
+.ocho {
+  float: right;
+  right: 0px;
+  width: 100%;
+  background-color: #006ec9;
 }

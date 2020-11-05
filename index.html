@@ -126,7 +126,7 @@
             <div class="services_header">Nuestros <span>Servicios</span></div>
             <div class="line3"></div>
             <div class="accordion-buttons-container">
-                <button class="accordion" value="Button1" onclick="accordion_click(this.value)">
+                <button class="accordion" id="accordion-Button1" value="Button1" onclick="accordion_click(this.value)">
                     <div class="accordion-button-icon-text-container">
                         <img class="accordion-button-icon" src="/assets/binoculares.svg"></img>
                         <span class="accordion-button-text">Vision Integral</span>
@@ -143,23 +143,114 @@
                     <img class="panel-image" src="/assets/Visión integral_04.jpg"></img>
                     <div class="accordion-barra" id="panel-barra-Button1"></div>
                 </div>
+                <button class="accordion" id="accordion-Button2" value="Button2" onclick="accordion_click(this.value)">
+                    <div class="accordion-button-icon-text-container">
+                        <img class="accordion-button-icon" src="/assets/letter.svg"></img>
+                        <span class="accordion-button-text">Prensa</span>
+                    </div>
+                    <span class="accordion-button-arrow" id="arrow-Button2">&#65088;</span>
+                    <div class="accordion-barra" id="barra-Button2"></div>
+                </button>
+                <div class="panel" id="panel-Button2">
+                    <p class="panel-text">Posicionamiento, planificación y ejecución
+                        de estrategia enfocada en los medios
+                        tradicionales de comunicación. Redacción
+                        de comunicados de prensa y
+                        relacionamiento con los periodistas.
+                        Entrenamiento de voceros.</p>
+                    <img class="panel-image" src="/assets/Prensa_04.jpg"></img>
+                    <div class="accordion-barra" id="panel-barra-Button2"></div>
+                </div>
+                <button class="accordion" id="accordion-Button3" value="Button3" onclick="accordion_click(this.value)">
+                    <div class="accordion-button-icon-text-container">
+                        <img class="accordion-button-icon" src="/assets/prense.svg"></img>
+                        <span class="accordion-button-text">Comunicación Digital</span>
+                    </div>
+                    <span class="accordion-button-arrow" id="arrow-Button3">&#65088;</span>
+                    <div class="accordion-barra" id="barra-Button3"></div>
+                </button>
+                <div class="panel" id="panel-Button3">
+                    <p class="panel-text">Desarrollo, armado y optimización en
+                        redes sociales. Confección de social
+                        media planning.</p>
+                    <img class="panel-image" src="/assets/comunicación_digital_01.jpg"></img>
+                    <div class="accordion-barra" id="panel-barra-Button3"></div>
+                </div>
+                <button class="accordion" id="accordion-Button4" value="Button4" onclick="accordion_click(this.value)">
+                    <div class="accordion-button-icon-text-container">
+                        <img class="accordion-button-icon" src="/assets/gestion.svg"></img>
+                        <span class="accordion-button-text">Gestión de crisis</span>
+                    </div>
+                    <span class="accordion-button-arrow" id="arrow-Button4">&#65088;</span>
+                    <div class="accordion-barra" id="barra-Button4"></div>
+                </button>
+                <div class="panel" id="panel-Button4">
+                    <p class="panel-text">Promovemos soluciones para prevenir y
+                        resolver crisis en las organizaciones y
+                        su repercusión en los medios y en el
+                        mundo digital. Definición de protocolos
+                        con acciones concretas y responsables
+                        identificados y preparados.</p>
+                    <img class="panel-image" src="/assets/gestion_crisis_03.jpg"></img>
+                    <div class="accordion-barra" id="panel-barra-Button4"></div>
+                </div>
+                <button class="accordion" id="accordion-Button5" value="Button5" onclick="accordion_click(this.value)">
+                    <div class="accordion-button-icon-text-container">
+                        <img class="accordion-button-icon" src="/assets/speech.svg"></img>
+                        <span class="accordion-button-text">Discurso</span>
+                    </div>
+                    <span class="accordion-button-arrow" id="arrow-Button5">&#65088;</span>
+                    <div class="accordion-barra" id="barra-Button5"></div>
+                </button>
+                <div class="panel" id="panel-Button5">
+                    <p class="panel-text">Construcción y estructuración del
+                        discurso. Gestión y elaboración de
+                        contenidos.</p>
+                    <img class="panel-image" src="/assets/discurso_02.jpg"></img>
+                    <div class="accordion-barra" id="panel-barra-Button5"></div>
+                </div>
+                <button class="accordion" id="accordion-Button6" value="Button6" onclick="accordion_click(this.value)">
+                    <div class="accordion-button-icon-text-container">
+                        <img class="accordion-button-icon" src="/assets/asuntos.svg"></img>
+                        <span class="accordion-button-text">Asuntos Públicos</span>
+                    </div>
+                    <span class="accordion-button-arrow" id="arrow-Button6">&#65088;</span>
+                    <div class="accordion-barra" id="barra-Button6"></div>
+                </button>
+                <div class="panel" id="panel-Button6">
+                    <p class="panel-text">Construcción y estructuración del
+                        discurso. Gestión y elaboración de
+                        contenidos.</p>
+                    <img class="panel-image" src="/assets/publicos_03.jpg"></img>
+                    <div class="accordion-barra" id="panel-barra-Button6"></div>
+                </div>
+
             </div>
         </div>
+
  <!--------FORM------------>
         <div class="background">
             <form>
                 <p class="mini-title">contáctese con nosotros</p>
-                <p class="title-form">Si tiene algún mensaje o consulta <span>no dude en escribirnos mediante el siguiente
-                        formulario</span></p>
+                <p class="title-form">Si tiene algún mensaje o consulta <span>no dude en escribirnos mediante el siguiente formulario</span></p>
                 <form>
-                    <input type="text" id="name" name="name" placeholder="Nombre y apellido"><br><br>
-                    <input type="text" id="mail" name="mail" placeholder="E-mail"><br><br>
-                    <input type="text" id="aim" name="aim" placeholder="Motivo de contacto*"><br><br>
-                    <textarea id="message" name="message" placeholder="Mensaje o consulta"></textarea><br><br>
-                    <input type="text" id="org" name="org" placeholder="Organización o empresa"><br><br>
-                    <input type="text" id="org" name="org" placeholder="Teléfono/móvil"><br><br>
+                    <div class="container">
+                        <div class="both">
+                            <input type="text" id="name" name="name" placeholder="Nombre y apellido"><br><br>
+                            <input type="text" id="mail" name="mail" placeholder="E-mail"><br><br>
+                        </div>
+                        <div class="both">
+                            <input type="text" id="org" name="org" placeholder="Organización o empresa"><br><br>
+                            <input type="text" id="org" name="org" placeholder="Teléfono/móvil"><br><br>
+                        </div>
+                    </div>
+                    <div class="width100">
+                        <input type="text" id="aim" name="aim" placeholder="Motivo de contacto*"><br><br>
+                        <textarea id="message" name="message" placeholder="Mensaje o consulta"></textarea><br><br>
+                    </div>
                     <div class="align"><input type="submit" value="ENVIAR MENSAJE" class="submit">
                     <i class="fas fa-arrow-right" id="color-icon"></i></div>
+                    <img src="/assets/mensaje.svg" alt="message-icon" width="60px">
                     <p class="tel">Tel.: 011-4446-2679 | E-mail: info@ochoymedio.com.ar</p>
             </form>  
         </div>
@@ -167,6 +258,7 @@
         <footer>
             <img src="" alt="">
             <p class="tel">2020 © Ocho y medio, todos los derechos reservados. | Diseño y desarrollo Creatica agency.</p>
+            <div class="ocho"><img src="assets/ocho.png" alt="ochoymedio" ></div> 
         </footer>
         <script src="main.js" type="text/javascript"></script>
 </body>
