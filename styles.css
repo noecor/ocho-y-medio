@@ -190,6 +190,7 @@ h1 {
 
 .img {
   width: 100%;
+  display: block;
 }
 #overlay {
   width: 55%;
@@ -296,6 +297,7 @@ h1 {
   background-image: url("assets2/acerca.PNG");
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
 }
 .acerca-text-container {
   position: absolute;
@@ -618,6 +620,7 @@ textarea {
   background-color: #006ec9;
   color: #ffffff;
   padding: 7px;
+  display: none;
 }
 .align {
   align-items: center;
