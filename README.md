@@ -1,3 +1,3 @@
 # Ocho y Medio
 Proyecto realizado freelance.
-Puedes verlo funcionando en: https://noecor.github.io/ocho-y-medio/
+Puedes verlo funcionando en: https://ocho-y-medio.vercel.app/
